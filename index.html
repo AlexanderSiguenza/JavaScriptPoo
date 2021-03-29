@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-ligth bg-ligth">
+        <a href="/" class="navbar-brand">
+            Product APP Alex
+        </a>
+    </nav>
+
+    <!--una clase container, para que que todo el contenido este centrado-->
+    <div class="container"></div>
+    
+    <div id="App" class="row pt-5">
+        <div class="col-md-4">            
+            <div class="card">
+                <div class="card-header">
+                    <h4>Add A Product</h4>
+                </div>
+                <form id="product-form" class="card-body">
+                    <div class="form-group"> <!--Separa los input-->
+                        <input type="text" id="name" placeholder="Product Name"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="price" step="0.01" placeholder="Product Price"
+                        class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <input type="number" id="year" value="2021" max="2021" min="2010" placeholder="Product Year"
+                        class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <input type="submit" value="save" class="btn btn-primary btn-block">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="product-list">
+            </div>
+        </div>
+    </div>
+    <script src="App.js" ></script>
+</body>
+</html>
